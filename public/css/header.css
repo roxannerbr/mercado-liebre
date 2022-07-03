@@ -1,0 +1,39 @@
+.header{
+    background-color: var(--amarillo);
+}
+
+.header h3{
+    text-align: center;
+}
+
+.header h3 .fondo{
+    background-color: var(--amarillo);
+    border-color: var(--amarillo);
+    border: 0ch;
+}
+
+.header form{
+    text-align: center;
+}
+
+.header .burger-menu{
+    border: 5px solid blue;
+    color: var(--grisClaro);
+    width: 25px;
+    height: 25px;
+    padding: 15px blue;
+    background-color: blue;
+    margin: auto;
+    border-radius: 25%;
+}
+
+.header nav ul li a{
+    margin: 5px;
+}
+
+.header nav ul li .fondo{
+    background-color: var(--amarillo);
+    border-color: var(--amarillo);
+    border: 0ch;
+}
+
