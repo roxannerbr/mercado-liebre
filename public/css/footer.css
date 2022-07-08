@@ -1,12 +1,27 @@
 .footer{
+    padding: 20px 15px 10px;
+}
+
+.footer section{
     text-align: center;
+    margin-bottom: 40px;
+    padding: 0 30px;
+}
+
+.footer section:last-child{
+    text-align: start;
 }
 
 .footer .icono{
-    color: blue;
+    color: var(--celeste);
     font-size: 2em;
     margin-bottom: 10px;
     border: 0ch;
+    padding: 0;
+}
+
+.footer h3, .footer section p{
+    color:var(--grisOscuro);
 }
 
 

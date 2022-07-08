@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+
 :root{
     /* colores */
     --amarillo: #EAC926;
     --azul: #03264C;
     --celeste: #1259c3;
-    --grisOoscuro: #666;
+    --grisOscuro: #666;
     --grisClaro: #ebebeb;
     --verde: #39b54a;
+    /* fuente */
+    --fuentePrincipal:'Roboto', sans-serif;
+    /* tamaños tipograficos */
+    --cuerpo-de-texto:12px;
+    --titulares:24px;
+    --precios:18px;
+    --descuentosYdescripciones:16px;
+
 }
 

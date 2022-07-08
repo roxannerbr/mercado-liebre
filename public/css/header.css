@@ -1,37 +1,48 @@
-.header{
+header{
     background-color: var(--amarillo);
+    padding: 20px 0;
 }
 
-.header h3{
+header .logo,header .buscador{
+    margin: 0 10px;
+}
+
+header img .logo{
+    width: 45%;
+}
+header h3{
+    margin: 20px 0;
     text-align: center;
 }
 
-.header h3 .fondo{
+header h3 .fondo{
     background-color: var(--amarillo);
     border-color: var(--amarillo);
     border: 0ch;
 }
 
-.header form{
+header form{
     text-align: center;
 }
 
-.header .burger-menu{
+header .burger-menu{
+    display: block;
+    font-size:16px;
     border: 5px solid blue;
     color: var(--grisClaro);
     width: 25px;
     height: 25px;
-    padding: 15px blue;
+    padding: 10px blue;
     background-color: blue;
     margin: auto;
-    border-radius: 25%;
+    border-radius: 6px;
 }
 
-.header nav ul li a{
-    margin: 5px;
+header nav ul{
+    margin: 0 0 20px;
 }
 
-.header nav ul li .fondo{
+header nav ul li .fondo{
     background-color: var(--amarillo);
     border-color: var(--amarillo);
     border: 0ch;
