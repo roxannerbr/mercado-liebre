@@ -1,15 +1,39 @@
-.main{
-    margin-left: 15px;
+main{
+    display: inline;
+    margin: 0 auto;
+    width: 90%;
+    padding: 20px 0;
 }
 
-/* .main p .precio{
-    font-size: 18px;
-} */
+main .banner{
+    display: none;
+}
 
-/* .main p{ 
-    font-size: 16px;
-} */
+main section{
+    padding: 20px 0;
+}
 
-/* .main h2{
+main section h2{
     font-size: 24px;
-} */
+    color: var(--grisOscuro);
+}
+
+main section article{
+    margin: 10px 0;
+}
+
+main section article img{
+    width: 100%;
+    margin: 10px;
+}
+
+main section article .camion, main section article .descuento{
+    color: var(--verde);
+}
+
+main section article h4{
+    color: var(--grisOscuro);
+}
+main .producto{
+    border: 15px solid var(#ebebeb);
+}
