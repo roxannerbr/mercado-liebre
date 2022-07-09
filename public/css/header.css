@@ -32,13 +32,19 @@ header .burger-menu{
     color: var(--grisClaro);
     width: 25px;
     height: 25px;
-    padding: 10px blue;
+    padding: 10
+    
+    px blue;
     background-color: blue;
     margin: auto;
     border-radius: 6px;
 }
 
-header nav ul{
+header .links ul li{
+    display: none;
+}
+
+header .links ul{
     margin: 0 0 20px;
 }
 
@@ -46,5 +52,20 @@ header nav ul li .fondo{
     background-color: var(--amarillo);
     border-color: var(--amarillo);
     border: 0ch;
+}
+
+/* tablet */
+@media(min-width:460px){
+    header .burger-menu{
+        display: none;
+    }
+    header .links ul li{
+        display: block;
+    }
+}
+
+/* desktop */
+@media(min-width:769px){
+
 }
 
