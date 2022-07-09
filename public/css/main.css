@@ -57,6 +57,13 @@ main section article .camion i{
     font-size: var(--cuerpo-de-texto);
 }
 
+main section article .camion i{
+    display: block;
+    position: absolute;
+    right: 20px;
+    margin-top: -30px;
+}
+
 main section article .precio{
     font-size: var(--precios);
 }
