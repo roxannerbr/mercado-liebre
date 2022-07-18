@@ -16,7 +16,9 @@ app.use(express.static(path.resolve(__dirname, 'public')))
 liveReloadServer.watch(path.join(__dirname, 'public'));
 app.use(connectLivereload());
 
-app.get('/',(req, res)=>res.sendFile(path.resolve(__dirname, 'views', 'home.html')))
+app.get('/',(req, res)=>res.sendFile(path.resolve(__dirname, 'views', 'home.html')));
+app.get('/ingreso',(req, res)=>res.sendFile(path.resolve(__dirname, 'views', 'ingreso.html')));
+app.get('/usuario',(req, res)=>res.sendFile(path.resolve(__dirname, 'views', 'usuario.html')));
 
 /* Funcion de actualizacion del servidor */
 liveReloadServer.server.once("connection", () => {
