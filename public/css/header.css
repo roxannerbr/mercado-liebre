@@ -1,54 +1,66 @@
-header{
+.header{
     background-color: var(--amarillo);
-    padding: 20px 0;
+    padding: 20px 0px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-header .logo,header .buscador{
+.header .logo{
     margin: 0 10px;
+    width: 50%;    
 }
 
-header img .logo{
-    width: 45%;
-}
-header h3{
-    margin: 20px 0;
-    text-align: center;
+.header form input{
+    border-radius: 3px;
+    border: 0px;
+    width: 50%;
+    height: 20px;
 }
 
-header h3 .fondo{
+.header .encabezado{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.header h3{
+    margin: 10px;
+    text-align: left;
+    width: 100%;
+    font-size: 10px;
+}
+
+.header h3 .fondo{
     background-color: var(--amarillo);
     border-color: var(--amarillo);
     border: 0ch;
 }
 
-header form{
-    text-align: center;
-}
 
-header .burger-menu{
-    display: block;
-    font-size:16px;
+
+.header .burger-menu{
+    display: flex;
+    font-size: 16px;
     border: 5px solid blue;
     color: var(--grisClaro);
-    width: 25px;
-    height: 25px;
-    padding: 10
-    
-    px blue;
+    width: 6%;
+    height: 26px;
     background-color: blue;
-    margin: auto;
-    border-radius: 6px;
+    margin-left: 100px;
+    border-radius: 4px;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-header .links ul li{
+.header .links{
     display: none;
 }
 
-header .links ul{
-    margin: 0 0 20px;
-}
-
-header nav ul li .fondo{
+.header nav ul li .fondo{
     background-color: var(--amarillo);
     border-color: var(--amarillo);
     border: 0ch;
@@ -56,15 +68,36 @@ header nav ul li .fondo{
 
 /* tablet */
 @media(min-width:460px){
-    header .burger-menu{
+    .header{
+         background-color: var(--amarillo);
+         padding: 20px 0;
+         margin: 0;
+         width: 126%;
+    }
+    .header .desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 200%;
+    }
+    .header .burger-menu{
         display: none;
     }
-    header .links ul li{
-        display: block;
+    .header .links{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        align-items: center;
+    }
+    .header .links ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .header .links ul li{
+        margin: 10px;
     }
 }
-
-/* desktop */
 @media(min-width:769px){
 
 }

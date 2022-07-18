@@ -1,6 +1,9 @@
 .footer{
     padding: 20px 15px 10px;
     background-color: white;
+    width: 52%;
+    font-size: 10px;
+    margin: 0px;
 }
 
 .footer section{

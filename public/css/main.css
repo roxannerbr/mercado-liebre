@@ -1,24 +1,7 @@
-/* tablet */
-@media(min-width:460px){
-    main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-     }
-    main section article h4{
-     display: block;
-     }
-}
-
-/* desktop */
-@media(min-width:769px){
-
-}
-
-
 main{
     display: inline;
-    margin: 0 auto;
-    width: 90%;
-    padding: 20px 0;
+    margin: 15px;
+    width: 100%;
 }
 
 main .banner{
@@ -37,10 +20,11 @@ main section h2{
 main section article{
     margin: 10px 0;
     background-color: white;
+    width: 100%;
 }
 
 main section article img{
-    width: 100%;
+    width: 50%;
     margin: 10px;
 }
 
@@ -55,20 +39,28 @@ main section article .camion i{
     border: 1px solid var(--verde);
     border-radius: 50%;
     font-size: var(--cuerpo-de-texto);
-}
-
-main section article .camion i{
     display: block;
     position: absolute;
-    right: 20px;
+    left: 180px;
     margin-top: -30px;
+    width: 8%;
 }
 
 main section article .precio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    width: 30%;
     font-size: var(--precios);
+    margin-left: 0;
 }
 
 main section article .descuento{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    width: 70%;
     color: var(--verde);
     font-size: var(--descuentosYdescripciones);
 }
@@ -79,5 +71,110 @@ main section article h4{
     color: var(--grisOscuro);
     font-size: var(--descuentosYdescripciones);
 }
+
+/* tablet */
+@media(min-width:460px){
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        display: inline-block;
+        width: 48%;
+     }
+    main section article h4{
+     display: block;
+     }
+     main .banner{
+         display: block;
+         width: 100%;
+     }
+     main section article .camion i{
+        color: var(--verde);
+        padding: 10px;
+        border: 1px solid var(--verde);
+        border-radius: 50%;
+        font-size: var(--cuerpo-de-texto);
+        position: absolute;
+        margin-top: -30px;
+        display: flex;
+        right: auto;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 6%;
+        margin-left: 190px;
+    }
+    
+    main section article .precio{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: absolute;
+        width: 30%;
+        font-size: var(--precios);
+        margin: 0;
+    }
+    
+    main section article .descuento{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        width: 80%;
+        color: var(--verde);
+        font-size: var(--descuentosYdescripciones);
+    }
+    
+}
+
+/* desktop */
+@media(min-width:769px){
+    main{
+        width: 100%;
+        display: list-item;
+    }
+    main section article{
+        display:inline-block;
+        width: 23%;
+    }
+    main .banner{
+        display: block;
+        width: 100%;
+    }
+    main section article .camion i{
+        color: var(--verde);
+        padding: 10px;
+        border: 1px solid var(--verde);
+        border-radius: 50%;
+        font-size: var(--cuerpo-de-texto);
+        display: flex;
+        position: absolute;
+        right: auto;
+        margin-top: -30px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 4%;
+        margin-left: 130px;
+    }
+    
+    main section article .precio{
+        margin: 0;
+    }
+    
+    main section article .descuento{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        width: 115%;
+        color: var(--verde);
+        font-size: var(--descuentosYdescripciones);
+    }
+    
+
+}
+
 
 

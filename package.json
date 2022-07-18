@@ -4,17 +4,20 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
-    "express": "^4.18.1"
+    "connect-livereload": "^0.6.1",
+    "express": "^4.18.1",
+    "livereload": "^0.9.3"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch":"nodemon --ext js,html --ignore public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/roxannerbr/mercado-liebre.git"
   },
-  "author": "",
+  "author": "Roxana",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/roxannerbr/mercado-liebre/issues"
