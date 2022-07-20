@@ -49,51 +49,83 @@
 
     </header>
 
-    <main>
+    <main class="register">
 
-        <h1>Creá tu cuenta</h1>
+        <h1>Registrate</h1>
 
         <form action="" method="get">
-            <div>
+            <div class="container bottom">
                 <label for="name">Nombre completo</label>
                 <input type="text" name="name" id="name" placeholder="Nombre y apellido">
-                <small>Obligatorio</small>
+                <small>Obligatorio*</small>
             </div>
 
-            <div>
+            <div class="container bottom">
                 <label for="e-mail">e-mail</label>
                 <input type="text" name="name" id="name" placeholder="Usuario">
-                <small>Obligatorio</small>
+                <small>Obligatorio*</small>
             </div>
 
-            <h2>Categorias de interés(puede elegir más de una)</h2>
-            <div>
-                <select name="interes" id="interes">
-                    <option value="electro">Electro</option>
-                    <option value="moda">Moda</option>
-                    <option value="hogar">Hogar</option>
-                    <option value="jugueteria">Jugueteria</option>
-                    <option value="vida sana">Vida sana</option>
-                    <small>Obligatorio</small>
+            <div class="container bottom">
+                <label for="domicilio">Domicilio</label>
+                <input type="text" name="domicilio" id="domicilio" placeholder="domicilio">
+                <small>Obligatorio*</small>
+            </div>
+
+            <div class="container bottom">
+                <label for="fecha de nacimiento">Fecha de nacimiento</label>
+                <input type="date" name="fecha de nacimiento" id="">
+                <small>Obligatorio*</small>
+            </div>
+
+            <h3 class="bottom">Perfil de usuario</h3>
+            <div class="container bottom">
+                <select name="perfil" id="perfil">
+                    <option value="vendedor">Vendedor</option>
+                    <option value="comprador">Comprador</option>
+                    <option value="compra y venta">Comprador y vendedor</option>
                 </select>
+                <small>Obligatorio*</small>
             </div>
 
-            <div>
+            <h2 class="bottom">Categorias de interés(puede elegir más de una)</h2>
+            <div class="categorias">
+                <label for="electro">Electro</label>
+                <input type="checkbox" name="interes" id="electro" value="electro">
+                <label for="moda">Moda</label>
+                <input type="checkbox" name="interes" id="moda" value="moda">
+                <label for="hogar">Hogar</label>
+                <input type="checkbox" name="interes" id="hogar" value="hogar">
+                <label for="jugueteria">Jugueteria</label>
+                <input type="checkbox" name="interes" id="jugueteria" value="jugueteria">
+                <label for="vida sana">Vida sana</label>
+                <input type="checkbox" name="interes" id="vida sana" value="vida sana">                
+                <small>Obligatorio*</small>
+            </div>
+
+            <div class="container bottom">
+                <label for="imagen">Foto de usuario</label>
+                <input type="file" name="imagen de usuario" id="" accept=".jpg, .png">
+                <small>Obligatorio*</small>
+            </div>
+
+            <div class="container bottom">
                 <label for="password">Contraseña</label>
                 <input type="text" name="password" id="password" placeholder="Contraseña">
-                <small>Obligatorio</small>
+                <small>Obligatorio*</small>
             </div>
 
-            <div>
+            <div class="container bottom">
                 <label for="password">Confirmá tu contraseña</label>
                 <input type="text" name="password" id="name" placeholder="Confirmá tu contraseña">
-                <small>Obligatorio</small>
+                <small>Obligatorio*</small>
             </div>
 
             <button type="submit">Enviar</button>
             <button type="reset">Borrar</button>
 
         </form>
+        
     </main>
     
     <footer class="footer">
