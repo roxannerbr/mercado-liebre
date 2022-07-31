@@ -1,3 +1,32 @@
-.login{
-    
+.login {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+.login input{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.login button{
+    padding: 1px;
+    width: 38%;
+    background-color: var(--celeste);
+    color: var(--grisClaro);
+}
+
+
+
+
+@media(min-width: 460px){
+    .login {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+        align-items: stretch;
+}
 }

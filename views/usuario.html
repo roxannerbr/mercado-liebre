@@ -55,19 +55,19 @@
 
         <form action="" method="get">
             <div class="container bottom">
-                <label for="name">Nombre completo</label>
+                <label for="name"></label>
                 <input type="text" name="name" id="name" placeholder="Nombre y apellido">
                 <small>Obligatorio*</small>
             </div>
 
             <div class="container bottom">
-                <label for="e-mail">e-mail</label>
-                <input type="text" name="name" id="name" placeholder="Usuario">
+                <label for="e-mail"></label>
+                <input type="text" name="name" id="name" placeholder="Nombre de usuario">
                 <small>Obligatorio*</small>
             </div>
 
             <div class="container bottom">
-                <label for="domicilio">Domicilio</label>
+                <label for="domicilio"></label>
                 <input type="text" name="domicilio" id="domicilio" placeholder="domicilio">
                 <small>Obligatorio*</small>
             </div>
@@ -80,11 +80,12 @@
 
             <h3 class="bottom">Perfil de usuario</h3>
             <div class="container bottom">
-                <select name="perfil" id="perfil">
-                    <option value="vendedor">Vendedor</option>
-                    <option value="comprador">Comprador</option>
-                    <option value="compra y venta">Comprador y vendedor</option>
-                </select>
+                <div class="perfil">
+                    <label for="comprador">Comprador</label>
+                    <input type="radio" name="select" id="select">
+                    <label for="vendedor">Vendedor</label>
+                    <input type="radio" name="select" id="select">
+                </div>
                 <small>Obligatorio*</small>
             </div>
 
@@ -110,13 +111,13 @@
             </div>
 
             <div class="container bottom">
-                <label for="password">Contraseña</label>
+                <label for="password"></label>
                 <input type="text" name="password" id="password" placeholder="Contraseña">
                 <small>Obligatorio*</small>
             </div>
 
             <div class="container bottom">
-                <label for="password">Confirmá tu contraseña</label>
+                <label for="password"></label>
                 <input type="text" name="password" id="name" placeholder="Confirmá tu contraseña">
                 <small>Obligatorio*</small>
             </div>

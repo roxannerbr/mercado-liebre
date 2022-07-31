@@ -28,6 +28,9 @@
     margin-top: 5px;
     color: red;
 }
+.register .categorias small{
+    color: red;
+}
 .register  h3{
     margin-bottom: 10px;
 }
@@ -37,6 +40,13 @@
 .register button{
     padding: 5px;
 }
+.register .perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 48%;
+}
+
 
 
 
