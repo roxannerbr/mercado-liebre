@@ -15,7 +15,9 @@
 <header class="header">
     <div class="desktop">
     <div class="encabezado">
+        <a href="/views/home.html">
         <img class="logo" src="img/logo-mercado-liebre.svg" alt="logo de mercado liebre">
+        </a>
         <!-- barra de busqueda -->
         <div class="buscador">
             <form action="/search" method="get">
@@ -49,18 +51,33 @@
 </header>
 
 <main class="login">
+
+    <h1>Bienvenido</h1>
+
+    <form action="" method="post">
     
     <div>
         <label for="usuario"></label>
         <input type="email" name="email" id="email" placeholder="e-mail">
+        <small>Obligatorio*</small>
     </div>
 
     <div>
         <label for="password"></label>
         <input type="password" name="pass" id="pass" placeholder="contraseña">
+        <small>Obligatorio*</small> 
     </div>
 
+    <div class="recordarme">
+        <input type="checkbox" name="recordarme" id="recordarme">
+        <label for="recordarme">Recordarme</label>
+    </div>
+
+    <small>La contraseña y/o e-mail no corresponden a nuestro registro de usuarios</small>
+
     <button type="submit">Enviar</button>
+
+    </form>
 
 </main>
 
