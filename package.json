@@ -6,12 +6,12 @@
   "dependencies": {
     "connect-livereload": "^0.6.1",
     "express": "^4.18.1",
-    "livereload": "^0.9.3"
+    "livereload": "^0.9.3",
+    "nodemon": "^2.0.19"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch":"nodemon --ext js,html --ignore public"
+    "watch": "nodemon --ext js,html --ignore public"
   },
   "repository": {
     "type": "git",
