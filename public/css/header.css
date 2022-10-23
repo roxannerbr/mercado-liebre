@@ -4,6 +4,7 @@
     margin: 0;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .header .logo{
@@ -14,13 +15,12 @@
 .header form input{
     border-radius: 3px;
     border: 0px;
-    width: 50%;
-    height: 20px;
+    width: 70%;
 }
 
 .header .encabezado{
     display: flex;
-    width: 50%;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
@@ -29,9 +29,10 @@
 
 .header h3{
     margin: 10px;
-    text-align: left;
+    text-align: center;
     width: 100%;
-    font-size: 10px;
+    font-size: 11px;
+    padding: 5px;
 }
 
 .header h3 .fondo{
@@ -48,12 +49,11 @@
     border: 5px solid blue;
     color: var(--grisClaro);
     width: 6%;
-    height: 26px;
+    height: 27px;
     background-color: blue;
-    margin-left: 100px;
-    border-radius: 4px;
+    margin-left: 200px;
+    border-radius: 5px;
     flex-direction: row;
-    justify-content: space-around;
 }
 
 .header .links{
@@ -72,14 +72,14 @@
          background-color: var(--amarillo);
          padding: 20px 0;
          margin: 0;
-         width: 126%;
+         width: 100%;
     }
     .header .desktop{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 200%;
+        width: 100%;
     }
     .header .burger-menu{
         display: none;
